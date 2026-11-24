@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thermoacoustic Heat Exchanger: 3D Dashboard</title>
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 16px; background: #fafafa; }
+    h1 { font-size: 1.4rem; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .panel { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 8px; min-height: 420px; }
+    @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <h1>Thermoacoustic Phenomena in a Heat Exchanger</h1>
+  <div class="grid">
+    <div id="surface" class="panel"></div>
+    <div id="bars" class="panel"></div>
+    <div id="shape" class="panel"></div>
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+</html>
